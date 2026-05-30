@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Corazon Vibrante</title>
+</head>
+<body>
+    <div class="heart">
+        <p>
+            Gracias mamá por estar siempre con migo en las buenas y en las malas.
+            
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script>
+        setInterval(() => {
+        confetti({
+            particleCount: 100,
+            spread: 60,
+            origin: { x: 0.5, y: 0.5 }
+        });
+    }, 2000);
+    </script>
+    
+</body>
+</html>
